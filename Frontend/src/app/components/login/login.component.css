@@ -1,0 +1,115 @@
+/* Container styling for the login form */
+.login-container {
+  width: 100%;
+  max-width: 400px; /* Control the form width */
+  margin: 100px auto; /* Center it vertically and horizontally */
+  padding: 30px;
+  border: 1px solid #e0e0e0; /* Light grey border */
+  border-radius: 10px;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  text-align: left; /* Text aligned to left like Amazon/Flipkart */
+}
+
+/* Login heading */
+.login-container h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333333; /* Dark grey for text */
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Label Styling */
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555555; /* Slightly muted grey */
+  margin-bottom: 5px;
+}
+
+/* Input Styling */
+.form-group input {
+  width: 100%;
+  padding: 12px 1px;
+  font-size: 14px;
+  border: 1px solid #d0d0d0; /* Light grey border */
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Slightly grey background */
+  transition: border-color 0.3s ease;
+}
+
+/* Input Focus Effect */
+.form-group input:focus {
+  border-color: #007185; /* Amazon's blue */
+  outline: none;
+  background-color: #ffffff; /* White background on focus */
+  box-shadow: 0 0 5px rgba(0, 113, 133, 0.3); /* Subtle blue glow */
+}
+
+/* Button Styling */
+.btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007185; /* Amazon blue */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Button */
+.btn:hover {
+  background-color: #005f68; /* Darker blue */
+}
+
+/* Redirect Link Styling */
+p {
+  font-size: 14px;
+  color: #555555; /* Neutral grey text */
+  text-align: center;
+  margin-top: 15px;
+}
+
+p a {
+  color: #007185; /* Amazon blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Fine Print (Additional Details or Notices) */
+.fine-print {
+  font-size: 12px;
+  color: #888888; /* Light grey for non-primary text */
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 480px) {
+  .login-container {
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  .form-group input,
+  .btn {
+    padding: 10px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}

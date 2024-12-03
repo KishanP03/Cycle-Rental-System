@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  
+  }
+  
+  .welcome {
+    padding-left: 1000px;
+  }
+  /* Navbar Styles */
+
+  .header { display: flex; justify-content: space-between; padding: 1em; background: #232f3e; color: white; }
+  .brand { font-size: 1.5em; cursor: pointer; }
+  .nav-links button { background: #ffa41b; border: none; padding: 100px; margin-left: 1em; cursor: pointer; }
+
+  /* Navbar Text Style */
+  .navbar span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  /* Navbar Button Styles */
+  .navbar button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: #fff;
+    color: #007185;
+    border: 1px solid #007185;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar button:hover {
+    background-color: #005f68;
+    color: #fff;
+  }
+  
+  /* Center Content Styles */
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    text-align: center;
+  }
+  
+  /* Main Heading */
+  .content h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Description Text */
+  .content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Button Styling in Content */
+  .content button {
+    padding: 10px 20px;
+    background-color: #007185;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .content button:hover {
+    background-color: #005f68;
+  }
+  
+  /* Align Buttons Horizontally to the Right */
+  .content .button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .content .button-container button {
+    margin-left: 15px; /* Space between buttons */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* Navbar Styles */
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar span {
+      margin-bottom: 10px;
+    }
+  
+    /* Content Adjustments for Mobile */
+    .content h1 {
+      font-size: 28px;
+    }
+  
+    .content p {
+      font-size: 16px;
+    }
+  
+    /* Button Adjustments */
+    .content button {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  
+    /* Align buttons vertically in smaller screens */
+    .content .button-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .content .button-container button {
+      margin-left: 0;
+      margin-bottom: 10px;  /* Space between buttons */
+    }
+  }
+  

@@ -1,0 +1,21 @@
+<div class="cart-container">
+  <h1>Shopping Cart</h1>
+  <div *ngIf="cartItems.length; else emptyCart">
+    <div *ngFor="let cycle of cartItems" class="cart-item">
+      <div class="cart-item-image">
+        <img [src]="cycle.imageUrl" alt="{{ cycle.name }}" />
+      </div>
+      <div class="cart-item-details">
+        <h3>{{ cycle.name }}</h3>
+        <p>Price: {{ cycle.price | currency }}</p>
+        <p>{{ cycle.description }}</p>
+        <button (click)="buyCycle(cycle)">Buy Now</button>
+        <br>
+        <button (click)="clearCart()">Clear Cart</button>
+      </div>
+    </div>
+  </div>
+  <ng-template #emptyCart>
+    <p>Your cart is empty.</p>
+  </ng-template>
+</div>

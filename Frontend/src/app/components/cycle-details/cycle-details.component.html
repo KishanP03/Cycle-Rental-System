@@ -1,0 +1,7 @@
+<div *ngIf="cycle">
+  <img [src]="cycle.imageUrl" [alt]="cycle.name">
+  <h2>{{ cycle.name }}</h2>
+  <p>{{ cycle.description }}</p>
+  <p>Price: ${{ cycle.price }}</p>
+  <button (click)="addToCart(cycle)">Add to Cart</button>
+</div>

@@ -1,0 +1,44 @@
+<div class="payment-container">
+    <h1>Payment Page</h1>
+  
+    <div class="cycle-details">
+      <img [src]="cycle.imageUrl" alt="Cycle Image" class="cycle-image" />
+      <div class="cycle-info">
+        <h2>{{ cycle.name }}</h2>
+        <p>Price: ₹{{ cycle.price }}</p>
+      </div>
+    </div>
+  
+    <form class="payment-form">
+      <h2>Choose a Payment Method</h2>
+  
+      <div class="payment-method">
+        <input type="radio" id="upi" name="payment" value="UPI" />
+        <label for="upi">UPI</label>
+      </div>
+  
+      <div class="payment-method">
+        <input type="radio" id="debit" name="payment" value="Debit Card" />
+        <label for="debit">Debit Card</label>
+      </div>
+  
+      <div class="payment-method">
+        <input type="radio" id="credit" name="payment" value="Credit Card" />
+        <label for="credit">Credit Card</label>
+      </div>
+  
+      <div class="payment-method">
+        <input type="radio" id="netbanking" name="payment" value="Net Banking" />
+        <label for="netbanking">Net Banking</label>
+      </div>
+  
+      <button
+        type="button"
+        class="btn"
+        (click)="processPayment('Selected Method')"
+      >
+        Pay Now
+      </button>
+    </form>
+  </div>
+  

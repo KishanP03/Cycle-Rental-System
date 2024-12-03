@@ -1,0 +1,27 @@
+<body>
+<div class="navbar">
+    <div *ngIf="authService.isLoggedIn(); else loggedOut">
+    <div class="header">
+      <div class="brand" routerLink="/">Cycle Rental</div>
+      <span class = "welcome">Welcome, {{ authService.getUserData()?.name }}</span>
+      <button (click)="onLogout()">Logout</button>
+      <button routerLink="/cart">Cart</button>
+    </div>
+    </div>
+    </div>
+  
+    <ng-template #loggedOut>
+        <header class="header">
+            <div class="brand" routerLink="/">Cycle Rental</div>
+            <app-search-bar></app-search-bar>
+            <div class="nav-links">
+              <button routerLink="/login">Login</button>
+              <button routerLink="/signup">Sign Up</button>
+              <button routerLink="/cart">Cart</button>
+            </div>
+          </header>
+    </ng-template>
+  </body>
+  
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
