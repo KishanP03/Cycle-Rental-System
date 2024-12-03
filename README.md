@@ -1,17 +1,24 @@
-🚴 Cycle Rental System
-A feature-rich web application for renting cycles, developed using Angular for the frontend and Spring Boot for the backend. The application allows users to browse available cycles, manage their carts, and complete their purchases seamlessly.
+# 🚴 **Cycle Rental System**
 
-🌟 Features
-Cycle Listings: View available cycles with detailed information fetched from the database.
-Search Functionality: Search for cycles based on user preferences.
-User Authentication: Secure login and sign-up system.
-Cart Management: Add cycles to the cart, modify quantities, and proceed with purchases.
-Database Integration: PostgreSQL for data storage and retrieval.
-📋 Prerequisites
-Before you begin, ensure you have the following installed:
+A **modern web application** for renting cycles, crafted with ❤️ using **Angular** and **Spring Boot**. It offers a seamless user experience for browsing, renting, and managing cycles.
 
-Node.js: Download Node.js
-Angular CLI: Install via npm install -g @angular/cli
-Java 11+: Required for Spring Boot
-PostgreSQL: Set up a PostgreSQL database
-Maven: For managing Spring Boot dependencies
+---
+
+## 🌟 **Features**
+
+✨ **Cycle Listings**: View all available cycles with detailed specs.  
+🔍 **Search**: Quickly find your desired cycles.  
+🔐 **Authentication**: Secure user login and sign-up.  
+🛒 **Cart Management**: Add cycles to the cart, modify quantities, and checkout.  
+📊 **Database Integration**: Data stored securely in **PostgreSQL**.
+
+---
+
+## 🎯 **Tech Stack**
+
+| **Category**      | **Technology**            |
+|--------------------|---------------------------|
+| Frontend          | Angular, TypeScript       |
+| Backend           | Spring Boot, Java         |
+| Database          | PostgreSQL                |
+| Tools/Build       | Node.js, npm, Maven       |
